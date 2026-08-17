@@ -1,13 +1,17 @@
+//WACP to find floor and ceil of the number
 #include <stdio.h>
 #include <math.h>
 int main()
 {
     float a;
+    printf("-----------------------------------\n");
     printf("Enter a number: ");
     scanf("%f",&a);
+    printf("-----------------------------------\n");
 
-    printf("\nfloor of %.2f: %.2f",a,floor(a));
-    printf("\nceil of %.2f: %.2f",a,ceil(a));
+    printf("floor of %.2f: %.2f\n",a,floor(a));
+    printf("ceil of %.2f: %.2f\n",a,ceil(a));
+    printf("-----------------------------------\n");
     
     return 0;
 }
