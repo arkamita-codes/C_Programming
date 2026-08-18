@@ -1,3 +1,4 @@
+//WACP to add two numbers without using third variable.
 #include <stdio.h>
 int main()
 {
