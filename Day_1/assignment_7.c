@@ -1,3 +1,4 @@
+//WACP to print the last digit of a number without using modulus operator
 #include <stdio.h>
 int main()
 {
@@ -12,8 +13,6 @@ int main()
 
     printf("The last digit of the numer %d is %d \n", a,last_digit);
     printf("-----------------------------------\n");
-
-
 
     return 0;
 }
