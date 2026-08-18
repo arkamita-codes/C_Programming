@@ -1,3 +1,4 @@
+//WACP to print multiplication table without using loop
 #include <stdio.h>
 int main()
 {
