@@ -1,3 +1,6 @@
+// Write a C program to calculate the time in hours, minutes, and seconds using ladder if-else.
+// The input will be in seconds.
+
 #include <stdio.h>
 int main()
 {
