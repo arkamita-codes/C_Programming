@@ -8,15 +8,17 @@ int main()
     scanf("%d",&day);
     printf("-----------------------------------\n");
     
-    if(day > 365)
+    if(day >= 365)
     {
         year = day / 365;
         day %= 365; 
+        month = day / 30;
+        day %= 30;
     }
-    else if(day <= 365)
+    else if(day < 365 && day >= 0)
     {
-        month = day / 365;
-        day %= 365;
+        month = day / 30;
+        day %= 30;
     }
     else
         printf("Invalid Input!");
@@ -26,5 +28,4 @@ int main()
     printf("\n-----------------------------------\n");
     
     return 0;
-
 }
