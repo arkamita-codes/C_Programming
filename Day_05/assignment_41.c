@@ -3,16 +3,16 @@
 int main()
 {
     int i, n;
-    int sum = 0;
+    int c = 0;
 
     printf("-----------------------------------\n");
     printf("Enter a number: ");
     scanf("%d",&n);
 
     for(i = n; i != 0; i/=10)
-        sum += i%10;
+        c++;
     
-    printf("The sum of the digits are: %d\n", sum);
+    printf("The number of the digits in %d: %d\n",n,c);
     printf("-----------------------------------\n");
 
 
