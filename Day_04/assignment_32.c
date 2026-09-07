@@ -1,6 +1,3 @@
-// Write a C program to calculate the time in hours, minutes, and seconds using ladder if-else.
-// The input will be in seconds.
-
 #include <stdio.h>
 int main()
 {
@@ -10,22 +7,27 @@ int main()
     scanf("%d",&second);
     printf("-----------------------------------\n");
 
-    if(second > 3600)
+    if(second >= 3600)
     {
-        hour = second % 3600;
-        second /= 3600;
+        hour = second / 3600;
+        second %= 3600;
+        minute = second / 60;
+        second %= 60;
     }
     else if(second > 60 && second <= 3600)
     {
-        minute = second % 60;
-        second /= 60;
+        minute = second / 60;
+        second %= 60;
     }
+    else if(second >= 0 && second < 60)
+        second = second;
     else 
-        printf("Invalid Input!")
+        printf("Invalid Input!");
 
-    printf("The time in year, month and day is\n");
+    printf("The time in hours, minutes and seconds is\n");
     printf("hour : minute : second\n%d:%d:%d",hour,minute,second);
     printf("\n-----------------------------------\n");
 
+    return 0;
     
 }
